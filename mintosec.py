@@ -4,7 +4,7 @@
 time_minutes = int(input())
 
 # convert time_minutes into second
-time_seconds = ___
+time_seconds = time_minutes * 60
 
 # print the result
 print(time_seconds)
