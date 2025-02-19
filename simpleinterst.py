@@ -13,4 +13,5 @@ si = (principal * rate * time) /100
 final = principal+ si
 
 # print interest and total_sum in separate lines
+print(si)
 print(final)
