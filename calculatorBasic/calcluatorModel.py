@@ -17,7 +17,7 @@ def stringToNumericalData(expression):
             numStack="" 
     
     if(numStack!=""):
-        data[2]=int[numStack]
+        data[2]=int(numStack)
 
     return data
 
