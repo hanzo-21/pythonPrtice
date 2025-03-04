@@ -18,8 +18,9 @@ def stringToNumericalData(expression):
                 except ValueError:
                     print("Invaide input")
 
-                data[1] = operator.index(digit)
+                data[1] = digit
                 numStack=""  
+                continue
 
             numStack = numStack+digit
                
@@ -51,3 +52,4 @@ def division(x,y):
         return div
     except ZeroDivisionError:
         print("Denominator cannot be 0. Try again")
+        return ZeroDivisionError
