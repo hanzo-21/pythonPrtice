@@ -1,25 +1,40 @@
-opration = "+-*/"
+operator = "+-*/"
 nums = "123456789"
 
 
 def stringToNumericalData(expression):
-    data = [0,0,0]
-    numStack=""
-    for digit in expression:
-        if digit ==' ':
-            continue
-    
-        if nums.__contains__(digit):
-            numStack = numStack+digit
-        elif opration.__contains__(digit):
-            data[0] = int(numStack)
-            data[1] = opration.index(digit)
-            numStack="" 
-    
-    if(numStack!=""):
-        data[2]=int(numStack)
 
-    return data
+    try:
+
+        data = [0,0,0]
+        numStack=""
+        for digit in expression:
+            if digit ==' ':
+                continue
+        
+            if operator.__contains__(digit):
+                try:
+                    data[0] = int(numStack)
+                except ValueError:
+                    print("Invaide input")
+
+                data[1] = operator.index(digit)
+                numStack=""  
+
+            numStack = numStack+digit
+               
+                
+        
+        if(numStack!=""):
+            try:
+                    data[2] = int(numStack)
+            except ValueError:
+                    print("Invaide input")
+
+        return data
+    
+    except:
+        print("something went wrong")
 
 def addition(x,y):
     return x+y
