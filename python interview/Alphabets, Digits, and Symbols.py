@@ -19,7 +19,7 @@ def counter(string):
 
         # check if the character is the digit
         # if yes, increment the digit counter
-        if char.isdigit():
+        elif char.isdigit():
             digits = digits +1
 
         # check if the character is the symbol
