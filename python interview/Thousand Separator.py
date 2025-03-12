@@ -6,7 +6,6 @@ def thousand_seperator(number):
     # convert the number to string and reverse it
     number = str(number)[::-1]
 
-    print(number)
 
     # create an empty string to store the result
     separated = ''
