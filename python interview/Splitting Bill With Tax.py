@@ -3,7 +3,9 @@
 # define a function
 def bill_splitter(amount, persons):
 
-    ___
+    amount += amount * 0.08875
+
+    return amount / persons
 
 
 # call the function
