@@ -25,12 +25,12 @@ def add_one(digits):
   # we need to add that digit
   # at beginning
   if carry ==1:
-    digits.append(1)
+    digits.insert(0,1)
   
   # return the final list
   return digits
 
 
-digits = [8, 9, 9]
+digits = [9,9,9,9]
 added_digits = add_one(digits)
 print(added_digits)
